@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando Links Externos</h1>
+    <p>Você pode acessar os matérias no site <a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf" target="_blank" rel="external">GitHub</a>.</p> 
+    <!--_BLANK vai abrir o link em uma nova janela em branco, _SELF vai abrir o link na janela ou frame atual(padrão), _TOP vai desfazer todos os frames e abrir o destino no navegador completo, _PARENT similar ao uso do _top em uma referência à janela mãe nome-do-frame caso esteja usando frames, indicar o nome da janela a abrir-->
+    <p>Você também pode acessar as aulas pelo <a href="https://www.youtube.com/watch?v=LeOVXQDsAIY&t=530s" target="_blank" rel="external">YouTube</a>.</p> 
+    <!--NEXT indica que o link é para a próxima parte do documento atual, PREV indica que o link é para a parte anterior do documento atual, AUTHOR indica que é um link para o site do autor do artigo atual, EXTERNAL indica que é um link para outro site que não faz parte do site atual, NOFOLLOW indica que é um link para um site não endossado, como um link pago-->
+
+    <h1>Usando Links Internos</h1>
+    <p>Esta é a primeira página do site. Se você quiser, pode acessar a minha <a href="pag002.html" rel="next" target="_self">Segunda página</a>.</p>
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html" rel="next" target="_self">Página de notícias</a>.</p>
+
+    <h1>Links para Download</h1>
+    <ul>
+       <li><a href="livro/meulivro.pdf" download="meulivro.pdf" type="aplication/pdf">Baixar livro em PDF</a></li> <!--Com PDF não funciona mas com arquivos ZIP sim--><!--Para saber qual TYPE deve ser usado veja no site: IANA.org-->
+    </ul>
+</body>
+</html>

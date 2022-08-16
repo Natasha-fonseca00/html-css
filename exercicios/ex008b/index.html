@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte</h2>
+    <p>O comando <code>document.getElementByld('teste')</code> é escrito em linguagem JavaScript.</p>
+    <!--A principal vantagem no uso dessa tag é a o valor semântico que ela representa, indicando ao navegador que se trata de um código de computador. Porém, existe também um efeito visual, pois as letras ficam no modo mono-espaçadas(monospace), o que facilita bastante a leitura do código.-->
+    <h2>Exemplo de código em Python</h2>
+    <code>
+        num = int(input('Digite um número'))
+        if num % 2 == 0;
+            print(f'O número {num} é par')
+        else:
+            print(f'O número {num} é ímpar')
+        print('FIM DO PROGRAMA')
+    </code> <!--Essa forma não deixa o código com os espaços corretos no site então utiliza-se a tag PRE que mantém o texto pré-formatado, exatamente da mesma maneira na qual ele foi digitado, incluindo quebras de linhas, espaços e tabulações.-->
+
+    <h2>Utilizando a tag PRE</h2>
+    <pre>
+        <code>
+            num = int(input('Digite um número'))
+            if num % 2 == 0;
+                print(f'O número {num} é par')
+            else:
+                print(f'O número {num} é ímpar')
+            print('FIM DO PROGRAMA')
+        </code>
+    </pre> <!--Para colocar o código PHYTON no canto da tela é só clicar em SHIFT+TAB-->
+    <h2>Citações simples</h2>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q></p> <!--Podemos colocar as aspas manualmente, porém com a tag Q atribuimos sentido a citação-->
+    <h2>Citações completas</h2>
+    <p>Segundo Sylvia Plath em seu livro "A redoma de vidro":</p>
+    <blockquote cite="https://notaterapia.com.br/2017/10/26/dez-melhores-frases-para-conhecer-o-incrivel-redoma-de-vidro-romance-semi-autobiografico-de-sylvia-plath/">
+        Deve haver um bocado de coisas que um banho quente não cura, mas não conheço muitas delas. Sempre que fico triste pensando que um dia vou morrer, ou perco o sono de tão nervosa, ou estou apaixonada por alguém que não verei por uma semana, me deixo sofrer até certo ponto e então digo: “vou tomar um banho quente".
+    </blockquote>
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p> <!--É só passar o cursor do mouse em cima das palavras que aparece o significado da abreviação-->
+</body>
+</html>

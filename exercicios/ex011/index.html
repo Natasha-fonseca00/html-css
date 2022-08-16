@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente diminua o tamanho da tela.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="foto g"> 
+
+        <!--AVISO: é importante respeitar a ordem dos sources. Imagens pequenas vem primeiro-->
+    </picture>
+
+    <h1>Áudios</h1>
+    <audio preload="metadata" controls autoplay>
+        <source src="midias/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midias/guanacast-33.mp3" type="audio/ogg">
+        <source src="midias/guanacast-33.mp3" type="audio/wav"> <!--Esse tipo de áudio é muito pesado, não é recomendado usar-->
+        <p>Seu navegador não suporta áudio <a href="midias/guanacast-33.mp3" download="guanacast-33.mp3" type="audio/mpeg"></a></p>
+    </audio>
+    
+    <h1>Vídeos com hospedagem própria</h1>
+    <video width="300" poster="" controls autoplay>
+        <source src="#" type="video/mp4"> <!--IMPORTANTE: use o conversor de video para colocar em outros formatos--> <!--IMPORTANTE 02: dessa maneira a hospedagem pode ficar muito cara para o cliente pois consome muito trafego de dados-->
+        <p>Infelizmente seu navegador não conseguiu carregar o vídeo</p>
+    </video>
+    
+    <h1>Vídeos externos - YouTube</h1>
+    <iframe width="400" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!--Dessa forma é muito melhor pois não gasta dinheiro (cuidado com direitos autorais)-->
+    
+    <h1>Vídeos externos - Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/351640689?h=ea4f76dc4f&title=0&portrait=0" width="400" height="374" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe> <!--IMPORTANTE: tem que ter uma internet boa pois ele da uma travadinha-->
+
+</body>
+</html>

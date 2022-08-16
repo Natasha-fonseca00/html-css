@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <style>
+        body{
+            font-family: 'Poppins';
+            background-color: #B4A3D9;
+            margin: 0px;
+        }
+
+        header{
+            background-color: #F2F0F2;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 9px 0px #0000002c;
+        }
+        header > h1{
+            color: #A979D9;
+        }
+
+        nav{
+            background-color: #ecd8f2;
+            border-radius: 7px;
+            padding: 3px;
+            box-shadow: 3px 3px 9px 0px #0000002c;
+        }
+        nav > a{
+            color: #B4A3D9;
+            font-weight: bold;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        }
+
+        main{
+            background-color: #F2F0F2;
+            box-shadow: 3px 3px 9px 0px #0000002c;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        section{
+            color: #a595c7;
+        }
+        article{
+            background-color: #ECD8F2;
+            box-shadow: 3px 3px 9px 0px #0000002c;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        article > h2{
+            color: #A979D9;
+        }
+        article > p{
+            color: #a595c7;
+            text-align: justify;
+        }
+        aside{
+            background-color: #A979D9;
+            box-shadow: 3px 3px 9px 0px #0000002c;
+            border-radius: 7px;
+        }
+        aside > p{
+            color: white;
+            margin-left: 10px;
+        }
+        footer{
+            background-color: #A979D9;
+            box-shadow: 3px 3px 9px 0px #0000002c;
+            border-radius: 3px 9px;
+            text-align: center;
+            margin: 10px;
+            padding: 1px;
+        }
+        footer > p{
+            margin: 0px;
+            color: white;
+        }
+       
+        div#bola{
+            height: 100px;
+            width: 100px;
+            margin: 20px;
+            background-color: #ecd8f2;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+         <nav>
+             <a href="#">Link</a>
+             <a href="#">Link</a>
+             <a href="#">Link</a>
+             <a href="#">Link</a>
+             <a href="#">Link</a>
+         </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes Política Tecnologia</p>
+        </section>
+         <section id="noticias">
+             <article>
+                 <h2>Notícia sobre o Brasil</h2>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut ligula vel metus feugiat hendrerit. Mauris iaculis nec lorem quis imperdiet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et semper enim.</p>
+             
+             <aside>
+                 <p>Artigo escrito por Natasha Fonseca</p>
+             </aside>
+             </article>
+         </section> <!--CTRL+SHIFT+P-->  
+    </main>
+    <footer>
+        <p>Desenvolvido pelo CursoemVídeo</p>
+    </footer>
+    
+    <div id="bola"></div>
+</body>
+</html>
