@@ -54,6 +54,7 @@ body{
 }
 
 a:hover{
+
     background-color: var(--cor3);
     border-radius: 20px;
     box-shadow: 3px 2px 10px 0px rgb(0 0 0 / 20%);
@@ -64,7 +65,6 @@ a:hover{
 }
 
 /*MAIN*/
-
 .conteudo{
     display: flex;
     flex-wrap: wrap;
