@@ -8,26 +8,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap" rel="stylesheet">
 </head>
 <style>
-
     body{
-        
         font-family: 'Poppins';
-        background-color: rgb(168, 182, 243); /*Por mais que tenha uma imagem de fundo é legal colocar um background color caso a imagem demore para carregar, assim o usuario consegue acessar normalmente até a imagem carregar*/
-        background-image: url(imagens/wallpaper002.jpg);
-        background-position: center top;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover; /*Dessa forma cobre a tela inteira, mas não mostra 100% da imagem*/
-        /*background-size: contain; faz a imagem ser 100% mas não fica por completo na tela*/
-        /*background-size: 100% 100%;
         height: 100vh;
-        Dessa forma não é legal, pois a imagem distorce*/
+        background-color: rgb(168, 182, 243); 
+        background-image: url(imagens/wallpaper002.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+        background-size: cover; 
+        
+
+        /*ANOTAÇÕES
+        Dessa forma não é legal, pois a imagem distorce:
+          height: 100vh;
+          background-size: contain; (faz a imagem ser 100% mas não fica por completo na tela)
+          background-size: 100% 100%;
+        
+        Por mais que tenha uma imagem de fundo é legal colocar um background color caso a imagem demore para carregar, assim o usuario consegue acessar normalmente até a imagem carregar.
+        
+        cover: Dessa forma cobre a tela inteira, mas não mostra 100% da imagem*
+
+        SHORTHAND: background: rgb(168, 182, 243) url(imagens/wallpaper002.jpg) center center no-repeat fixed;
+          !o size não funciona na shorthand
+        */
     }
 
     main{
         background-color: rgb(247, 247, 247);
-        width: 500px;
-        padding: 15px;
+        max-width: 450px;
+        padding: 20px;
         margin: auto;
         border-radius: 10px;
     }
@@ -45,6 +55,7 @@
     <main>
         <h1>Teste de imagem de fundo</h1>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
