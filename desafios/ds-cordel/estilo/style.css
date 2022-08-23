@@ -5,7 +5,6 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Playfair Display' serif;
-    font-size: 20px;
 }
 
 html, body{
@@ -21,9 +20,9 @@ header{
 
 header > h1{
     padding-top: 50px;
-    font-family: 'Playfair Display';
     font-weight: 600;
-    font-size: 50px;
+    font-size: 6vw;
+    font-family: 'Playfair Display', serif;
 }
 
 header > p{
@@ -35,24 +34,43 @@ header > p{
 section{
     padding-top: 10vh;
     padding-bottom: 10vh;
-    padding-left: 35px;
+    padding-left: 30px;
     line-height: 2em;
+    font-size: 2.5vw;
+}
+
+section > p{
+    padding-bottom: 2em;
 }
 
 section.normal{
     color: rgb(19, 18, 18);
+    padding-left: 45px;
 }
 
 section.imagem{
     background-color: rgb(19, 18, 18);
     color: rgb(228, 228, 228);
+    box-shadow: inset 3px 3px 13px 0px rgba(0, 0, 0, 0.274);
+    background-attachment: fixed;
 }
 
 section.imagem > p{
     background-color: rgba(48, 45, 45, 0.719);
-    width: 300px;
-    padding: 25px;
+    display: inline-block;
+    padding: 20px;
     border-radius: 5px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.685);
+}
+
+section#img01{
+    background-image: url('../imagens/fundo_1.jpg');
+    background-size: cover;
+}
+
+section#img02{
+    background-image: url('../imagens/fundo_2.jpg');
+    background-size: cover;
 }
 
 a{
