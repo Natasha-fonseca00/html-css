@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas grandes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<style>
+    body{
+        font-family: 'Poppins';
+    }
+
+    h1{
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    table{
+        width: 300px;
+        height: 200px;
+        border-collapse: collapse;
+    }
+
+    th{
+        background-color: rgb(233, 231, 231);
+    }
+
+    td.num{
+        text-align: right;
+    }
+
+    td, th{
+        border: 1px solid black;
+        padding: 5px;
+    }
+
+    tfoot{
+        background-color: rgb(233, 231, 231);
+    }
+</style>
+
+<body>
+    <!---
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+
+    <h1>Uso de tabelas grandes</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">46.649.132	</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.411.923</td>
+            </tr>
+            <tr> 
+                <td>Rio de Janeiro</td>
+                <td class="num">17.463.349	</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.985.284</td>
+            </tr>
+            <tr>
+                <td>Panará</td>
+                <td class="num">11.597.484</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td><strong>Total de Habitantes</strong></td>
+                <td class="num"><strong>112.107.172</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
