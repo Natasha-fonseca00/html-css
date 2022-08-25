@@ -5,8 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estrutura básica de tabelas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
 </head>
+<style>
+    body{
+        font-family: 'Poppins',sans-serif;
+    }
+
+    table{
+        width: 400px;
+        border-collapse: collapse; /*ANOTAR*/ 
+    }
+
+    tr.linha-1{
+        background-color: rgb(221, 221, 221);
+    }
+
+    td{
+        border: 1px solid black;
+        padding: 5px;
+    }
+</style>
 <body>
-    
+    <!--
+        HIERARQUIA DE TABELAS (basicas)
+        TABLE 
+          TABLE ROW = linha de tabela
+          TABLE HEADER = cabeçalho de tabela
+          TABLE DATA = dado de tabela
+    -->
+
+    <h1>Minha primeira tabela</h1>
+    <table>
+        <tr class="linha-1"> <!--Primeira linha-->
+            <td>A1</td> <!--Dado-->
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+
+        <tr> <!--Segunda linha-->
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+
+        <tr> <!--Terceira linha-->
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+
+        <tr> <!--Quarta linha-->
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+    </table>
 </body>
 </html>
