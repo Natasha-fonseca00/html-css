@@ -18,9 +18,16 @@
     }
 
     table{
-        width: 300px;
+        width: 400px;
         height: 200px;
         border-collapse: collapse;
+    }
+
+    caption{
+        font-weight: 600;
+        font-size: 1.1em;
+        padding: 5px;
+        background-color: rgb(196, 194, 194);
     }
 
     th{
@@ -38,6 +45,7 @@
 
     tfoot{
         background-color: rgb(233, 231, 231);
+        text-align: center;
     }
 </style>
 
@@ -55,10 +63,11 @@
 
     <h1>Uso de tabelas grandes</h1>
     <table>
+        <caption>População das Unidades Federativas</caption> <!--LEGENDA DA TABELA-->
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th> <!--SCOPE="COL": serve para dizer que nesse caso o estado é o título dessa COLUNA. O mesmo se aplica no caso da população-->
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
@@ -85,7 +94,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <td><strong>Total de Habitantes</strong></td>
+                <th scope="row"><strong>Total de Habitantes</strong></th> <!--SCOPE="ROW": serve para dizer que o total de habitantes é o título dessa LINHA-->
                 <td class="num"><strong>112.107.172</strong></td>
             </tr>
         </tfoot>
