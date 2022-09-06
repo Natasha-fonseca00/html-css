@@ -15,7 +15,14 @@
     h1{
         font-size: 30px;
         font-weight: 600;
+        color: rgb(51, 51, 51);
     }
+
+    tbody > tr:nth-child(2n-1){
+        background-color: rgb(211, 210, 210);
+    } /*Efeito zebrado
+        Outros valores: odd (impar) e even (par)
+     */
 
     table{
         width: 400px;
@@ -27,11 +34,13 @@
         font-weight: 600;
         font-size: 1.1em;
         padding: 5px;
-        background-color: rgb(196, 194, 194);
+        background-color: rgb(187, 187, 189);
+        color: rgb(44, 44, 44);
     }
 
     th{
-        background-color: rgb(233, 231, 231);
+        background-color: rgb(37, 37, 37);
+        color: rgb(238, 237, 237);
     }
 
     td.num{
@@ -44,7 +53,8 @@
     }
 
     tfoot{
-        background-color: rgb(233, 231, 231);
+        background-color: rgb(37, 37, 37);
+        color: rgb(238, 237, 237);
         text-align: center;
     }
 </style>
@@ -73,7 +83,7 @@
         <tbody>
             <tr>
                 <td>São Paulo</td>
-                <td class="num">46.649.132	</td>
+                <td class="num">46.649.132</td>
             </tr>
             <tr>
                 <td>Minas Gerais</td>
@@ -91,11 +101,59 @@
                 <td>Panará</td>
                 <td class="num">11.597.484</td>
             </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 466 630</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 674 793</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9 240 580</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8 777 124</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7 338 473</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7 206 589</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">7 153 262</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4 269 995</td>
+            </tr>
+            <tr>
+                <td>Espirito Santo</td>
+                <td class="num">4 108 508</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">4 059 905</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">3 567 234</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3 560 903</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
                 <th scope="row"><strong>Total de Habitantes</strong></th> <!--SCOPE="ROW": serve para dizer que o total de habitantes é o título dessa LINHA-->
-                <td class="num"><strong>112.107.172</strong></td>
+                <td class="num"><strong>192.531.168</strong></td>
             </tr>
         </tfoot>
     </table>
