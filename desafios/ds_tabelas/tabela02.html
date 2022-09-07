@@ -7,7 +7,52 @@
     <title>Tabela 2</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+<style>
+    body{
+        font-family: 'Poppins', sans-serif;
+    }
+
+    table{
+        width: 300px;
+    }
+
+    caption{
+            font-weight: 600;
+            color: rgb(110, 44, 172);
+        }
+
+    td{
+        border: 1px solid black;
+        padding: 5px;
+        text-align: center;
+    }
+</style>
 <body>
-    
+    <table>
+        <caption>Desafio 2 de mesclagem de células</caption>
+        <tr>
+            <td colspan="4">A</td>
+            <td rowspan="4">B</td>
+        </tr>
+        <tr>
+            <td rowspan="4">C</td>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+        </tr>
+        <tr>
+            <td>J</td>
+            <td>K</td>
+            <td>L</td>
+        </tr>
+        <tr>
+            <td colspan="4">M</td>
+        </tr>
+    </table>
 </body>
 </html>
